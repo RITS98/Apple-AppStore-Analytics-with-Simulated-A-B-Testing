@@ -485,20 +485,16 @@ This project includes a comprehensive A/B testing simulation component that gene
 - **Geographic Variations**: Different countries show varied response patterns
 - **Temporal Patterns**: Sessions distributed across realistic time periods
 
-### Expected Test Results (Based on Simulation Logic)
+### Results (Based on Simulation Logic)
 
-| Test | Variant | Expected Conv. Rate | Statistical Significance |
-|------|---------|-------------------|------------------------|
-| Icon Design | Control | ~20.4% | ✅ Statistically Significant |
-| Icon Design | Minimalist | ~23.2% | ✅ Statistically Significant |
-| Icon Design | Colorful | ~24.2% | ✅ Statistically Significant |
-| Description | Short | ~20.9% | ✅ Statistically Significant |
-| Description | Detailed | ~24.2% | ✅ Statistically Significant |
-| Pricing | Paid | ~19.1% | ✅ Statistically Significant |
-| Pricing | Freemium | ~22.5% | ✅ Statistically Significant |
-| Pricing | Free | ~26.1% | ✅ Statistically Significant |
-| Screenshots | 3 Screenshots | ~22.2% | ✅ Statistically Significant |
-| Screenshots | 5 Screenshots | ~23.0% | ✅ Statistically Significant |
+<img width="908" height="310" alt="image" src="https://github.com/user-attachments/assets/31046b06-d7d7-46d8-a303-d151846a506e" />
+
+<img width="1678" height="864" alt="image" src="https://github.com/user-attachments/assets/1b1a3612-b5f9-47dd-8132-a2586a2291c6" />
+
+<img width="1675" height="857" alt="image" src="https://github.com/user-attachments/assets/2e82f395-c702-4646-9af4-6e72f2399650" />
+
+<img width="1668" height="595" alt="image" src="https://github.com/user-attachments/assets/b6ffb42d-e966-4ae2-8273-18d86eaa3a73" />
+
 
 ### Implementation & Usage
 
@@ -594,25 +590,7 @@ The project includes a comprehensive guide for creating interactive dashboards i
 - **Drill-down Capabilities**: Click through from high-level to detailed views
 - **Real-time Updates**: Refresh data as new sessions are added
 - **Export Options**: Download charts and data for presentations
-- **Mobile Responsive**: Access dashboards on any device
 
-#### Sample Dashboard Layout
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                A/B Testing Analysis Dashboard               │
-├─────────────────┬─────────────────┬─────────────────────────┤
-│   Conversion    │  Daily Trends   │     Demographics        │
-│   Comparison    │                 │      Heatmap           │
-│                 │                 │                        │
-├─────────────────┼─────────────────┼─────────────────────────┤
-│  Geographic     │  Time Spent     │   App Genre            │
-│  Performance    │  Analysis       │   Performance          │
-│                 │                 │                        │
-├─────────────────┴─────────────────┴─────────────────────────┤
-│            Statistical Significance Summary                 │
-└─────────────────────────────────────────────────────────────┘
-```
 
 #### Quick Start Guide
 
