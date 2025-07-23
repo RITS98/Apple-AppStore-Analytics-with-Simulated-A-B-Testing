@@ -4,6 +4,11 @@
 
 This project provides comprehensive analytics and insights into the Apple iOS App Store ecosystem. It analyzes app characteristics, user ratings, pricing strategies, genre distributions, and other key metrics to understand the mobile app market landscape. Additionally, it includes an advanced A/B testing simulation component that generates realistic user interaction data for app store optimization experiments.
 
+<img width="1658" height="837" alt="image" src="https://github.com/user-attachments/assets/96b2c842-08a0-431e-81d4-53d94ecb9f63" />
+
+<img width="1692" height="854" alt="image" src="https://github.com/user-attachments/assets/c1a6ffd5-c8a8-40b3-b948-5074ea29476e" />
+
+
 ## 🎯 Project Objectives
 
 The project aims to answer several key business questions:
@@ -239,21 +244,6 @@ Open the Jupyter notebook `ab_testing_superset_guide.ipynb` for detailed instruc
    - Device type filter
    - Age group filter
 
-### Manual Setup (Local Development Alternative)
-
-If you prefer to run without Docker:
-
-1. **Install PostgreSQL locally**
-2. **Install Python dependencies**:
-   ```bash
-   pip install pandas numpy matplotlib seaborn plotly jupyter missingno faker psycopg2-binary
-   ```
-3. **Update database connection settings** in the simulation script
-4. **Launch Jupyter Notebook**:
-   ```bash
-   jupyter notebook notebooks/analysis.ipynb
-   ```
-
 ## 📈 Key Insights and Findings
 
 ### 1. Genre Distribution
@@ -375,58 +365,6 @@ PostgreSQL Database: analytics_db
     ├── ab_test_variants (10 records)        # Test variant definitions  
     └── ab_test_summary (10 records)         # Aggregated test results
 ```
-
-## 🎓 Learning Outcomes
-
-This project demonstrates:
-
-### Core Data Science Skills
-- **Data Science Pipeline**: End-to-end analytics workflow from raw data to insights
-- **Data Visualization**: Multiple visualization techniques using Plotly, Matplotlib, and Seaborn
-- **Statistical Analysis**: Correlation analysis, hypothesis testing, and A/B testing methodology
-- **Feature Engineering**: Creating meaningful derived variables and data transformations
-
-### Advanced Analytics Techniques
-- **A/B Testing**: Complete experimental design, data simulation, and statistical significance testing
-- **Synthetic Data Generation**: Using Faker to create realistic user interaction datasets
-- **Conversion Rate Optimization**: Understanding user behavior patterns and optimization strategies
-- **Demographic Segmentation**: Analyzing user behavior across different segments
-
-### Technical Infrastructure
-- **Business Intelligence**: Dashboard creation and KPI tracking with Apache Superset
-- **Container Orchestration**: Docker and Docker Compose for reproducible environments
-- **Database Integration**: PostgreSQL with analytics tools and complex SQL queries
-- **ETL Processes**: Data extraction, transformation, and loading workflows
-
-### Business Intelligence & Visualization
-- **Interactive Dashboards**: Creating actionable business dashboards
-- **Data Storytelling**: Presenting insights through compelling visualizations
-- **Executive Reporting**: Summarizing complex analysis for stakeholder communication
-- **Real-time Analytics**: Setting up systems for ongoing data monitoring
-
-## 🔮 Future Enhancements
-
-Potential areas for expansion:
-
-1. **Machine Learning Models**: 
-   - App success prediction
-   - Price optimization models
-   - User rating prediction
-
-2. **Advanced Analytics**:
-   - Time series analysis (if temporal data available)
-   - Clustering analysis for app categorization
-   - Market basket analysis for genre relationships
-
-3. **Real-time Data Integration**:
-   - API integration for live App Store data
-   - Automated data pipeline with Airflow
-   - Real-time dashboard updates
-
-4. **Enhanced Visualizations**:
-   - Geographic analysis (if location data available)
-   - Network analysis of app relationships
-   - Advanced statistical visualizations
 
 ## 🧪 A/B Testing Simulation
 
@@ -586,6 +524,23 @@ The project includes a comprehensive guide for creating interactive dashboards i
 
 #### Some Superset Dashboard Screenshots
 
+- Store the sql queries to get the A/B test results
+
+<img width="1686" height="661" alt="image" src="https://github.com/user-attachments/assets/4b0185b9-a2ce-46bd-a819-4fbcb9c544b9" />
+
+- Store the datasets generated from the SQL queries
+
+<img width="1477" height="653" alt="image" src="https://github.com/user-attachments/assets/9f6d6c18-5659-4f78-b650-8d6ae6cda99d" />
+
+-  Before creating a Dashboard. First create the charts
+
+<img width="1672" height="720" alt="image" src="https://github.com/user-attachments/assets/fbab5a12-8ddf-411e-8148-e978b368b331" />
+
+- Create the Dashboard here
+
+<img width="1508" height="569" alt="image" src="https://github.com/user-attachments/assets/200590f6-8e06-47de-af8c-1796681a1cbc" />
+
+
 
 #### Dashboard Features
 
@@ -623,29 +578,57 @@ The project includes a comprehensive guide for creating interactive dashboards i
 - **Effect Sizes**: Meaningful differences between variants (>2% conversion impact)
 - **Practical Significance**: Results have real business impact potential
 
-## Future Enhancements
+## 🎓 Learning Outcomes
 
-### Scaling for Real-World Usage
+This project demonstrates:
 
-1. **Data Volume**: Current simulation handles 15K sessions; production use case may require:
-   - Database partitioning for millions of sessions
-   - Data archiving strategies
-   - Query optimization for large datasets
+### Core Data Science Skills
+- **Data Science Pipeline**: End-to-end analytics workflow from raw data to insights
+- **Data Visualization**: Multiple visualization techniques using Plotly, Matplotlib, and Seaborn
+- **Statistical Analysis**: Correlation analysis, hypothesis testing, and A/B testing methodology
+- **Feature Engineering**: Creating meaningful derived variables and data transformations
 
-2. **Real-time Processing**: 
-   - Stream processing for live A/B test results
-   - Cache layers for dashboard performance
-   - Automated alerting for significant changes
+### Advanced Analytics Techniques
+- **A/B Testing**: Complete experimental design, data simulation, and statistical significance testing
+- **Synthetic Data Generation**: Using Faker to create realistic user interaction datasets
+- **Conversion Rate Optimization**: Understanding user behavior patterns and optimization strategies
+- **Demographic Segmentation**: Analyzing user behavior across different segments
 
-3. **Security & Compliance**:
-   - User data anonymization
-   - GDPR compliance for European users
-   - Access controls for sensitive metrics
+### Technical Infrastructure
+- **Business Intelligence**: Dashboard creation and KPI tracking with Apache Superset
+- **Container Orchestration**: Docker and Docker Compose for reproducible environments
+- **Database Integration**: PostgreSQL with analytics tools and complex SQL queries
+- **ETL Processes**: Data extraction, transformation, and loading workflows
 
-4. **Integration Points**:
-   - App store APIs for real conversion data
-   - Marketing automation platforms
-   - Business intelligence ecosystems
+### Business Intelligence & Visualization
+- **Interactive Dashboards**: Creating actionable business dashboards
+- **Data Storytelling**: Presenting insights through compelling visualizations
+- **Executive Reporting**: Summarizing complex analysis for stakeholder communication
+- **Real-time Analytics**: Setting up systems for ongoing data monitoring
+
+## 🔮 Future Enhancements
+
+Potential areas for expansion:
+
+1. **Machine Learning Models**: 
+   - App success prediction
+   - Price optimization models
+   - User rating prediction
+
+2. **Advanced Analytics**:
+   - Time series analysis (if temporal data available)
+   - Clustering analysis for app categorization
+   - Market basket analysis for genre relationships
+
+3. **Real-time Data Integration**:
+   - API integration for live App Store data
+   - Automated data pipeline with Airflow
+   - Real-time dashboard updates
+
+4. **Enhanced Visualizations**:
+   - Geographic analysis (if location data available)
+   - Network analysis of app relationships
+   - Advanced statistical visualizations
 
 ## 🔧 Troubleshooting & FAQ
 
