@@ -4,6 +4,13 @@
 
 This project provides comprehensive analytics and insights into the Apple iOS App Store ecosystem. It analyzes app characteristics, user ratings, pricing strategies, genre distributions, and other key metrics to understand the mobile app market landscape. Additionally, it includes an advanced A/B testing simulation component that generates realistic user interaction data for app store optimization experiments.
 
+Some diagrams of what to come
+
+<img width="1678" height="832" alt="image" src="https://github.com/user-attachments/assets/cfb80c63-ac0f-43d9-9d54-54a795e37a2f" />
+
+<img width="1683" height="847" alt="image" src="https://github.com/user-attachments/assets/25665597-6217-49a4-bd42-3da6a4f216b9" />
+
+
 ## 🎯 Project Objectives
 
 The project aims to answer several key business questions:
