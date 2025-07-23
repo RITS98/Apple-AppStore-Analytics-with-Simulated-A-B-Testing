@@ -584,6 +584,9 @@ The project includes a comprehensive guide for creating interactive dashboards i
    - Sample sizes and confidence levels
    - Decision-making framework
 
+#### Some Superset Dashboard Screenshots
+
+
 #### Dashboard Features
 
 - **Interactive Filters**: Date range, geography, demographics, app genre
@@ -600,9 +603,7 @@ The project includes a comprehensive guide for creating interactive dashboards i
 4. **Build Dashboard**: Combine charts with filters and interactions
 5. **Share Insights**: Export or share dashboard links with stakeholders
 
-### 🎯 Key Business Insights Expected
-
-Based on the simulation parameters, you should discover:
+### 🎯 Key Business Insights 
 
 #### Primary Findings
 - **Icon Design Impact**: Colorful icons outperform minimalist and original designs
